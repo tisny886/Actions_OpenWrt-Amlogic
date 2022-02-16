@@ -50,7 +50,7 @@ sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 # sed -i 's#openwrt.proxy.ustclug.org#mirrors.bfsu.edu.cn\\/openwrt#' package/lean/default-settings/files/zzz-default-settings
 
 # 拉取软件包
-git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 git clone https://github.com/kenzok8/small-package package/small-package && rm -rf package/small-package/luci-app-bypass && rm -rf package/small-package/lua-maxminddb
 git clone https://github.com/kiddin9/openwrt-bypass.git package/openwrt-bypass
 git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
